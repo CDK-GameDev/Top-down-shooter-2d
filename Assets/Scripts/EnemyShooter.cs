@@ -9,7 +9,6 @@ namespace Assets.Scripts
 
         public void Start()
         {
-            // Shooting logic
             InvokeRepeating(nameof(Shoot), shootRate, shootRate);
         }
 
