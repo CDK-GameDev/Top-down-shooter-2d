@@ -1,0 +1,4 @@
+repository "Top-down-shooter-2d@CDKML@cloud"
+  path "/"
+    smartbranch "/main/develop" 
+     
