@@ -4,7 +4,6 @@ namespace Assets.Scripts
 {
     public class Bullet : BulletBase
     {
-        // Start is called before the first frame update
         void Start()
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

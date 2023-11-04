@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8308542264338923525}
   - component: {fileID: 7318661875421330511}
-  - component: {fileID: 9074530642364206720}
   - component: {fileID: 4309707964801798441}
+  - component: {fileID: 6259890917864953155}
+  - component: {fileID: 9074530642364206720}
   - component: {fileID: 9005333249927523073}
   - component: {fileID: 8143239797963394283}
-  - component: {fileID: 6259890917864953155}
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,19 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9074530642364206720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3836338973309214091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96f6791191ff924b84db868c393731e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!58 &4309707964801798441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,6 +124,32 @@ CircleCollider2D:
   m_Offset: {x: -0.2, y: 0.6}
   serializedVersion: 2
   m_Radius: 3.5
+--- !u!114 &6259890917864953155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836338973309214091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 012a617ce7979f149a70c5d10e7766fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyScoreValue: 15
+--- !u!114 &9074530642364206720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836338973309214091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96f6791191ff924b84db868c393731e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
 --- !u!114 &9005333249927523073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,16 +178,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8308542264338923525}
   enemyBulletPrefab: {fileID: 3518676179036984906, guid: 18013b6353cf7074fa5352129d6cea47, type: 3}
---- !u!114 &6259890917864953155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3836338973309214091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 012a617ce7979f149a70c5d10e7766fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyScoreValue: 15

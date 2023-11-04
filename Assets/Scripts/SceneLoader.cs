@@ -5,23 +5,23 @@ namespace Assets.Scripts
 {
     public class SceneLoader : MonoBehaviour
     {
-        [SerializeField] private int sceneIndexToLoad = 1;  // The index of the scene to load when the player dies
-
         private void OnEnable()
         {
             // Subscribe to the Player's death event
             Player.OnPlayerDeath += LoadScene;
+            EnemySpawner.OnPlayerWin += LoadScene;
         }
 
         private void OnDisable()
         {
             // Unsubscribe from the Player's death event
             Player.OnPlayerDeath -= LoadScene;
+            EnemySpawner.OnPlayerWin -= LoadScene;
         }
 
-        public void LoadScene()
+        public void LoadScene(int index)
         {
-            SceneManager.LoadSceneAsync(sceneIndexToLoad, LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
         }
     }
 }

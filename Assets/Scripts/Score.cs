@@ -16,7 +16,7 @@ namespace Assets.Scripts
         private void UpdateScore(int scorePoints)
         {
             score += scorePoints;
-            score_text.text = score.ToString(CultureInfo.InvariantCulture);
+            score_text.text = $"Score: {score.ToString(CultureInfo.InvariantCulture)}";
         }
     }
 }

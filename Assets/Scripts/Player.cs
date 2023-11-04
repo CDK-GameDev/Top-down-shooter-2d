@@ -4,7 +4,7 @@ namespace Assets.Scripts
 {
     public class Player : MonoBehaviour
     {
-        public static event System.Action OnPlayerDeath;
+        public static event System.Action<int> OnPlayerDeath;
 
         void OnTriggerEnter2D(Collider2D hitInfo)
         {
@@ -19,7 +19,7 @@ namespace Assets.Scripts
         {
             // Logic for player's death
             Debug.Log("Player died!");
-            OnPlayerDeath?.Invoke();
+            OnPlayerDeath?.Invoke(3);
 
             Destroy(gameObject);  // Example action: Destroy the player object
         }
